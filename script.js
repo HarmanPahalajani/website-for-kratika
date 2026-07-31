@@ -37,6 +37,7 @@
 
   function playBackgroundAudio() {
     const audio = audioState.background;
+    audio.volume = 0.32;
     if (!audio || config.audio?.enabled === false) {
       return;
     }
