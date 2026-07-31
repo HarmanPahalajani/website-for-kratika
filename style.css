@@ -1448,7 +1448,7 @@ h4 {
 
 }
 
-.iphone-frame {
+/* .iphone-frame {
     width: 260px;
     aspect-ratio: 9 / 19.5;
     margin: auto;
@@ -1480,7 +1480,7 @@ h4 {
     align-items: center;
     text-align: center;
     gap: 2rem;
-}
+} */
 
 @media (max-width: 640px) {
   .iphone-frame {
