@@ -218,17 +218,28 @@
         setPlayOverlayVisible(false);
       });
 
-      cinemaVideo.addEventListener('play', () => {
-        setPlayOverlayVisible(false);
-      });
+     cinemaVideo.addEventListener('play', () => {
+    setPlayOverlayVisible(false);
+
+    if (!audioState.background.paused) {
+        audioState.background.pause();
+    }
+});
 
       cinemaVideo.addEventListener('pause', () => {
-        setPlayOverlayVisible(true);
-      });
+    setPlayOverlayVisible(true);
 
+    if (audioState.background.paused) {
+        audioState.background.play().catch(() => {});
+    }
+});
       cinemaVideo.addEventListener('ended', () => {
-        setPlayOverlayVisible(true);
-      });
+    setPlayOverlayVisible(true);
+
+    if (audioState.background.paused) {
+        audioState.background.play().catch(() => {});
+    }
+});
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
