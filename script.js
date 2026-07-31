@@ -35,7 +35,7 @@
     audio.play().catch(() => {});
   }
 
-  function playBackgroundAudio() {
+function playBackgroundAudio() {
     const audio = audioState.background;
 
     if (!audio || config.audio?.enabled === false) {
@@ -43,14 +43,9 @@
     }
 
     audio.loop = true;
-    audio.volume = 0.9;   // Try 0.6 first
+    audio.volume = 0.9;
     audio.play().catch(() => {});
 }
-
-    audio.loop = true;
-    audio.volume = 0.18;
-    audio.play().catch(() => {});
-  }
 
   function openLetterOverlay() {
     closeGalleryOverlay();
