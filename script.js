@@ -4,7 +4,6 @@
   const introStage = document.getElementById('introStage');
   const siteMain = document.getElementById('siteMain');
   const beginJourneyBtn = document.getElementById('beginJourneyBtn');
-  const skipIntroBtn = document.getElementById('skipIntroBtn');
   const replayButtons = [document.getElementById('replayBtn'), document.getElementById('replayBottomBtn')];
   const envelopeButton = document.querySelector('.envelope-button');
   const giftButton = document.querySelector('.gift-button');
