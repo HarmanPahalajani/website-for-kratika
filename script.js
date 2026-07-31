@@ -167,9 +167,7 @@
     if (beginJourneyBtn) {
       beginJourneyBtn.addEventListener('click', beginStory);
     }
-    // if (skipIntroBtn) {
-    //   skipIntroBtn.addEventListener('click', beginStory);
-    // }
+ 
     replayButtons.forEach((button) => {
       if (button) {
         button.addEventListener('click', replayStory);
