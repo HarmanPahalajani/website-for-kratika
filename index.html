@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Happy Girlfriend's Day — a cinematic celebration of love and connection.">
+    <title>Happy Girlfriend's Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <section class="loading-screen" id="loadingScreen" aria-live="polite">
+      <div class="loading-shell">
+        <div class="loading-heart" aria-hidden="true">
+          <span class="heart-core"></span>
+        </div>
+        <div class="loading-progress" aria-hidden="true">
+          <div class="loading-bar"></div>
+        </div>
+        <p class="loading-title">Opening your love letter</p>
+        <p class="loading-subtitle">A little glow, a little wonder, and a whole lot of love.</p>
+      </div>
+    </section>
+
+    <section class="intro-stage" id="introStage" aria-label="Opening cinematic introduction">
+      <canvas class="intro-canvas" id="introCanvas"></canvas>
+      <div class="intro-backdrop"></div>
+      <div class="intro-content">
+        <p class="eyebrow">For my favorite person</p>
+        <h1>A celebration of us.</h1>
+        <p class="intro-copy">
+          This little journey gathers the warmth of our conversations, the comfort of our connection, and the love that keeps growing between us.
+        </p>
+        <div class="intro-actions">
+          <button class="button primary" id="beginJourneyBtn">Begin Journey</button>
+          <button class="button secondary" id="skipIntroBtn">Skip Intro</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="site-main" id="siteMain" hidden>
+      <section class="hero-section" id="heroSection">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">A love letter in motion</p>
+          <h2>Happy Girlfriend's Day ❤️</h2>
+          <p>
+            A cinematic celebration of the love we keep building through every conversation, every laugh, and every gentle moment we share.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#journey">Begin Our Journey</a>
+            <button class="button secondary" id="replayBtn">Replay</button>
+          </div>
+          <div class="scroll-indicator" aria-label="Scroll to the story">
+            <span></span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <img class="hero-image" src="assets/images/hero.jpg" alt="A warm romantic portrait that frames our celebration">
+          <div class="hero-overlay"></div>
+          <div class="hero-orb"></div>
+          <div class="floating-heart heart-a"></div>
+          <div class="floating-heart heart-b"></div>
+          <div class="floating-heart heart-c"></div>
+        </div>
+      </section>
+
+      <section class="timeline-section" id="journey">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our journey</p>
+          <h3>Our sweet journey till now</h3>
+        </div>
+
+        <article class="memory-card reveal memory-one">
+          <div class="memory-copy">
+            <p class="eyebrow">Memory one</p>
+            <h4>The first hello.</h4>
+            <p>
+              The first conversation that felt like the beginning of something tender, lasting, and beautifully ours.
+            </p>
+            <blockquote>“You made ordinary evenings feel like soft gold.”</blockquote>
+          </div>
+          <div class="memory-visual" aria-hidden="true">
+            <div class="device landscape-device premium-phone" style="width: 380px; height: 240px;">
+              <div class="device-screen">
+                <img class="phone-image" src="assets/images/phone/first-chat.jpg" alt="A dreamy conversation scene from our first chat" style="aspect-ratio: 16/9;">
+                <div class="phone-glow"></div>
+              </div>
+            </div>
+            <blockquote class="memory-quote">“You made ordinary evenings feel like soft gold.”</blockquote>
+          </div>
+        </article>
+
+        <article class="memory-card reveal memory-two">
+          <div class="memory-visual" aria-hidden="true">
+            <div class="device laptop premium-laptop">
+              <div class="device-screen">
+                <video class="memory-video" preload="metadata" playsinline poster="assets/images/hero.jpg" style="aspect-ratio: 9/16;">
+                  <source src="assets/videos/first-video-call.mp4" type="video/mp4">
+                  <source src="assets/videos/special-edit.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <button class="memory-video-play" type="button" aria-label="Play video" style="position: absolute; inset: 0; margin: auto; width: 72px; height: 72px; border: 0; border-radius: 50%; background: rgba(255,255,255,0.16); backdrop-filter: blur(8px); display: grid; place-items: center; z-index: 10; cursor: pointer; transition: opacity 300ms ease;"><span style="width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 20px solid rgba(255,255,255,0.9); margin-left: 4px;"></span></button>
+                <div class="video-glow"></div>
+              </div>
+              <div class="device-base"></div>
+              <div class="device-webcam"></div>
+              <div class="device-keyboard"></div>
+              <div class="device-trackpad"></div>
+            </div>
+            <blockquote class="memory-quote">“The best scenes were the ones we were living.”</blockquote>
+          </div>
+          <div class="memory-copy">
+            <p class="eyebrow">Memory two</p>
+            <h4>First video call</h4>
+            <p>
+              Humara first video call after a tagda kalesh 😭😭😂
+            </p>
+          </div>
+        </article>
+
+        <article class="memory-card reveal memory-three">
+          <div class="memory-copy">
+            <p class="eyebrow">Memory three</p>
+            <h4>Your first voice message</h4>
+            <p>
+              It was sent by you on 14th september 2025.
+            </p>
+          </div>
+          <div class="memory-visual" aria-hidden="true">
+            <div class="device phone premium-phone preserved-memory">
+              <div class="device-screen">
+                <img class="phone-image" src="assets/images/phone/first-voice-message.jpg" alt="A cherished voice message screenshot from our earliest memories">
+                <div class="phone-glow"></div>
+              </div>
+              <div class="device-notch"></div>
+              <div class="device-camera"></div>
+              <div class="device-speaker"></div>
+            </div>
+            <blockquote class="memory-quote">“I’m thinking of you.”</blockquote>
+          </div>
+        </article>
+
+        <article class="memory-card reveal memory-four">
+          <div class="memory-visual" aria-hidden="true">
+            <div class="gallery-stack">
+              <button class="polaroid polaroid-a" type="button" data-image="assets/images/gallery/photo1.jpg" aria-label="Open gallery memory 1">
+                <img src="assets/images/gallery/photo1.jpg" alt="A treasured memory from our gallery">
+              </button>
+              <button class="polaroid polaroid-b" type="button" data-image="assets/images/gallery/photo2.jpg" aria-label="Open gallery memory 2">
+                <img src="assets/images/gallery/photo2.jpg" alt="Another cherished memory from our gallery">
+              </button>
+              <button class="polaroid polaroid-c" type="button" data-image="assets/images/gallery/photo3.jpg" aria-label="Open gallery memory 3">
+                <img src="assets/images/gallery/photo3.jpg" alt="A gentle memory from our gallery">
+              </button>
+            </div>
+          </div>
+          <div class="memory-copy">
+            <p class="eyebrow">Memory four</p>
+            <h4>Polaroids of us.</h4>
+            <p>
+              Little keepsakes of the warmth we keep finding in each other, even in the smallest moments.
+            </p>
+            <blockquote>“Even the little things were radiant.”</blockquote>
+          </div>
+        </article>
+
+        <article class="memory-card reveal memory-five">
+          <div class="memory-copy">
+            <p class="eyebrow">Memory five</p>
+            <h4>a special video edit for you</h4>
+            <p>
+              A cinematic highlight of the love we keep building, wrapped in warmth, glow, and the quiet joy of being together.
+            </p>
+          </div>
+          <div class="memory-visual" aria-hidden="true">
+            <div class="cinema-stage">
+              <div class="cinema-aurora"></div>
+              <div class="cinema-particles"></div>
+              <div class="cinema-floating-heart heart-g"></div>
+              <div class="cinema-floating-heart heart-h"></div>
+              <div class="cinema-frame">
+                <video class="cinema-video" preload="metadata" playsinline controls poster="assets/images/hero.jpg" style="aspect-ratio: 9 / 16;">
+                  <source src="assets/videos/special-edit.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <button class="cinema-play-button" type="button" aria-label="Play the 30-second highlight video">
+                  <span></span>
+                </button>
+              </div>
+              <div class="cinema-meta">
+                <span>00:30</span>
+                <p>Every second reminds me how lucky I am to have you.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="memory-card reveal memory-six">
+          <div class="memory-visual" aria-hidden="true">
+            <button class="envelope-button" type="button" aria-label="Open the letter">
+              <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="letter-sheet">
+                  <p>For my favorite person</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="memory-copy">
+            <p class="eyebrow">Memory six</p>
+            <p>
+              A note of devotion, waiting to unfold into the kind of words that feel honest, gentle, and true.
+            </p>
+          </div>
+        </article>
+
+        <article class="memory-card reveal memory-nine">
+          <div class="memory-copy">
+            <p class="eyebrow">Memory nine</p>
+            <p>
+              One final little treasure, made to hold the love we keep choosing, again and again.
+            </p>
+          </div>
+          <div class="memory-visual" aria-hidden="true">
+            <button class="gift-button" type="button" aria-label="Open the gift box">
+              <div class="gift-phone-screen">
+                <div class="gift-box">
+                  <div class="gift-ribbon"></div>
+                  <div class="gift-lid"></div>
+                  <div class="gift-base"></div>
+                  <div class="gift-sparkles"></div>
+                  <div class="gift-heart heart-d"></div>
+                  <div class="gift-heart heart-e"></div>
+                  <div class="gift-heart heart-f"></div>
+                </div>
+              </div>
+            </button>
+            <div class="surprise-message" aria-live="polite">
+              <p class="surprise-title">❤️ Happy Girlfriend's Day ❤️</p>
+              <p>Thank you for every smile,</p>
+              <p>every laugh,</p>
+              <p>every memory,</p>
+              <p>and every moment that made our story so beautiful.</p>
+              <p>I can't wait to create countless more memories with you.</p>
+              <p>I Love You ❤️</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="ending-section reveal">
+        <div class="ending-aurora" aria-hidden="true"></div>
+        <div class="ending-heart" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+        <p class="ending-title">❤️ Happy Girlfriend's Day ❤️</p>
+        <h3>Our Story Continues...</h3>
+        <p>
+          Thank you for every smile, every laugh, every conversation, and every tender moment that has made our story feel so beautifully ours.
+          I hope this little journey reminds you how deeply loved you are.
+        </p>
+        <button class="button primary" id="replayBottomBtn">Replay Journey</button>
+      </section>
+
+      <div class="letter-overlay" id="letterOverlay" hidden>
+        <div class="letter-modal" role="dialog" aria-modal="true" aria-label="Open letter">
+          <button class="letter-close" type="button" id="letterCloseBtn" aria-label="Close the letter">✕</button>
+          <p class="letter-heading">Dear Kratika ❤️,</p>
+          <p>Happy Girlfriend's Day!</p>
+          <p>Bas itna bolna tha ki thank you meri life mein aane ke liye. Tere saath har chhoti si memory bhi special ban jaati hai. Tu hamesha aise hi haste rehna, kyuki teri smile meri favourite hai. ❤️</p>
+          <p>I am really lucky to have you. I hope hum dono aise hi saath mein aur bahut saari beautiful memories banayein.</p>
+          <p>I love you so much. ❤️</p>
+          <p>– TERA Harman</p>
+        </div>
+      </div>
+
+      <div class="gallery-overlay" id="galleryOverlay" hidden>
+        <div class="gallery-modal" role="dialog" aria-modal="true" aria-label="Gallery viewer">
+          <button class="gallery-close" type="button" id="galleryCloseBtn" aria-label="Close gallery">✕</button>
+          <img id="galleryImage" src="" alt="Gallery memory">
+          <p class="gallery-hint">Tap anywhere to change image</p>
+        </div>
+      </div>
+
+      <section class="credits-section reveal" aria-label="Closing credits">
+        <div class="credits-scroll">
+          <p class="eyebrow">Credits</p>
+          <h3>Directed by love</h3>
+          <p>Written in the language of tenderness</p>
+          <p>Illustrated with starlight and patience</p>
+          <p>Performed by two hearts choosing each other</p>
+          <p>Presented with love</p>
+          <p>Made by harman for you dear kratika</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="config.js?v=2"></script>
+    <script src="effects.js?v=2"></script>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
