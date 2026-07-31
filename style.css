@@ -1427,7 +1427,12 @@ h4 {
   100% { transform: scale(1); opacity: 1; filter: blur(0); }
 }
 
+@media (max-width: 960px) {
 
+  .hero-section,
+  .memory-card {
+    grid-template-columns: 1fr;
+  }
 
   .memory-card:nth-child(even) .memory-visual {
     order: 2;
@@ -1440,8 +1445,8 @@ h4 {
   .hero-visual {
     min-height: 360px;
   }
+
 }
-/* ===== Memory 2 iPhone ===== */
 
 .iphone-frame {
     width: 260px;
