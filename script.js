@@ -347,7 +347,7 @@
 function createFloatingHeart() {
     const heart = document.createElement("div");
     heart.className = "floating-heart";
-    heart.innerHTML = "❤";
+    heart.innerHTML = "♥";
 
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.fontSize = (10 + Math.random() * 8) + "px";
